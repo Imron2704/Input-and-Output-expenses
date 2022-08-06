@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect, HttpResponse
-from .models import Project, Category, Expense
+from budget.models import Project, Category, Expense
 from django.views.generic import CreateView
 from django.utils.text import slugify
-from .forms import ExpenseForm
+from budget.forms import ExpenseForm
 import json
 
 def project_list(request):
